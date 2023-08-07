@@ -1,6 +1,6 @@
 // MainMenu 
 
-export default function mainmenu(any) {
+export default function mainmenu() {
     return <div id ="mainmenu">
         <ul>
             <li></li>

@@ -1,0 +1,12 @@
+[
+	{
+		"number": 1,
+		"question": "Who is blablabl",
+        "answer" : "John Connor"
+	},
+    {
+		"number": 2,
+		"question": "What year did Skynet become sentient?",
+        "answer" : "1997"
+	}
+]
