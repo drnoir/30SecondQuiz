@@ -1,4 +1,4 @@
-import mainmenu from "./components/mainmenu"
+import mainmenu from "./components/MainMenu"
 
 // main view template 
 export default function quiz() {
