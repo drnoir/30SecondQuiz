@@ -1,4 +1,4 @@
-// MainMenu 
+  <MainMenu />// MainMenu
 
 export default function MainMenu () {
     return <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">

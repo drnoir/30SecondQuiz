@@ -1,15 +1,13 @@
 import Link from 'next/link'
 import 'tailwindcss/tailwind.css'
 import MainMenu from './components/MainMenu'
-import Logo from './components/Logo'
-
+import Header from "./components/Header";
 export default function Home() {
   return (
   <div className ='container mx-auto'>
-    <h1>30 Second Quizzer</h1>
-        <Logo/>
-       <Link href="/quiz" as="/quiz"></Link>
+       <Header/>
        <MainMenu />
+      <Link href="/pages/Quiz" as="/quiz"></Link>
   </div>
   )
 }
