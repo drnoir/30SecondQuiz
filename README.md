@@ -13,3 +13,6 @@ Built upon Custom server example from Next with TypeScript + Nodemon example
 ## Dependencies 
 - reactchartjs2 
 - tailwind (Styling)
+
+## Backend 
+- Prisma / postgres

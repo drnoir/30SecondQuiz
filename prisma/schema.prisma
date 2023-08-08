@@ -9,3 +9,49 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  username  String?
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  role      Role     @default(USER)
+  blockIP boolean @default false
+  quiz Quiz[]
+}
+
+model Admin {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  username  String?
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  role      Role     @default(ADMIN)
+}
+
+model Quiz {
+  id    Int     @id @default(autoincrement())
+  quizName  String @unique
+  score Int @default 0
+  timer Int @default 0
+  results Results[]
+}
+
+model Results{
+  id    Int     @id @default(autoincrement())
+  finalScore Int @default 0
+  timeTaken Int @default 0
+  wrong Int @default 0
+  correct Int @default 0
+  timerRanOut Int @default 0
+ }
+
+ enum Role {
+   USER
+   ADMIN
+ }
+
+
