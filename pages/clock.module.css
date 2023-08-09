@@ -1,0 +1,37 @@
+/* CSS for clock timer
+// based on  https://codepen.io/NikhilKumaran/pen/GRoboYJ*/
+.clock {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #b06a26;
+    border-radius: 50%;
+    background: #fefbf2;
+    /*transform: translate(-50%, -50%);*/
+    box-shadow: inset 0px 0px 10px black;
+    margin: 0 auto;
+}
+
+.clock::before {
+    position:absolute;
+    content: '';
+    height: 60px;
+    width: 5px;
+    background: black;
+    top: 45%;
+    left: calc(50% - 5px);
+    border-radius: 5px;
+    animation: spin 30s linear infinite;
+    transform-origin: top;
+}
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(-180deg)
+    }
+    100% {
+        transform: rotate(180deg)
+    }
+}

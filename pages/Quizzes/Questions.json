@@ -1,12 +1,12 @@
 [
 	{
 		"number": 1,
-		"question": "Who is blablabl",
-        "answer" : "John Connor"
+		"question": "Who is the leader of the resistance against Skynet",
+        "answers" : ["John Connor", "Boss Hog", "Barry White", "Sarah Connor"]
 	},
     {
 		"number": 2,
 		"question": "What year did Skynet become sentient?",
-        "answer" : "1997"
+		"answers" : [1997, 2003, 1987, 1999]
 	}
 ]
