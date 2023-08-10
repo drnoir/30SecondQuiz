@@ -1,18 +1,9 @@
-import mainmenu from "./components/MainMenu"
 import Question from "./components/Question";
-import {useEffect, useState} from "react";
+import Questions from "./Questions.json"
 // main view template
-
-async function loadQuestionsJSON() {
-    const response = await fetch('Questions.json');
-    await response.json();
-    return  await response.json();
-}
-
-loadQuestionsJSON();
-
+console.log(Questions);
 export default function Quiz() {
     return <div>
-        <Question questions = {loadQuestionsJSON()}  />
+        <Question questionsProps = {Questions}></Question>
     </div>
   }
