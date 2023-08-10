@@ -5,13 +5,15 @@ import 'tailwindcss/tailwind.css'
 import MainMenu from './components/MainMenu'
 import Header from "./components/Header";
 import Quiz from "./Quiz";
-import styles from './clock.module.css'
+import {useEffect, useState} from "react";
+
+
 export default function Home() {
   return (
   <div className ='container mx-auto bg-amber-300 shadow-xl '>
        <Header/>
        <MainMenu />
-       <Quiz />
+       <Quiz  />
   </div>
   )
 }

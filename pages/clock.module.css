@@ -2,8 +2,8 @@
 // based on  https://codepen.io/NikhilKumaran/pen/GRoboYJ*/
 .clock {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 10px solid #b06a26;
     border-radius: 50%;
     background: #fefbf2;
