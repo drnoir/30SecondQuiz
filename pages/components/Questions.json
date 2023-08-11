@@ -1,0 +1,27 @@
+{
+  questions
+  = [
+  {
+    "number": 1,
+    "question": "Who is the leader of the resistance against Skynet in the film Terminator 2",
+    "answers": [
+      "John Connor",
+      "Boss Hog",
+      "Barry White",
+      "Sarah Connor"
+    ],
+    "correctAnswer": "John Connor"
+  },
+  {
+    "number": 2,
+    "question": "What year did Skynet become sentient?",
+    "answers": [
+      1997,
+      2003,
+      1987,
+      1999
+    ],
+    "correctAnswer": 1997
+  }
+];
+}

@@ -15,12 +15,12 @@
 .clock::before {
     position:absolute;
     content: '';
-    height: 60px;
-    width: 5px;
+    height: 85px;
+    width: 8px;
     background: black;
-    top: 45%;
+    top: 50%;
     left: calc(50% - 5px);
-    border-radius: 5px;
+    border-radius: 10px;
     animation: spin 30s linear infinite;
     transform-origin: top;
 }
