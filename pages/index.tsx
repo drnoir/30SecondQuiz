@@ -4,7 +4,7 @@ import 'tailwindcss/tailwind.css'
 // components
 import MainMenu from './components/MainMenu'
 import Header from "./components/Header";
-import Question from './components/Question'
+import Question from './components/Questions'
 import Footer from "./components/Footer";
 
 export default function Home() {

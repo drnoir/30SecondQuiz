@@ -2,8 +2,6 @@
 interface ButtonProps {
     Title: string;
 }
-
-
 export default function Button ({Title}, correctAnswer) {
     async function handleSubmit(e, correctAnswer) {
         e.preventDefault();
