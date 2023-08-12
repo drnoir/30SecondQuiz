@@ -4,11 +4,12 @@ import Button from "./Button";
 import styles from "../clock.module.css";
 import Clock from "./Clock";
 
-import QuestionsJSON from "./Questions.json"
-//QUESTION
-
-
 export default function Questions() {
+
+    // translation prototype func COMMENTED OUT FOR LATER
+    // async function translateText(text){
+    //    return await translate(text, "ru");
+    // }
 
     const questionsList = [
         { number: 1, question: "Who is the leader of the resistance against Skynet in the film Terminator 2", answers: [
@@ -32,13 +33,11 @@ export default function Questions() {
     ];
     // timer and reset state
     const [count, setCount] = useState(30);
-
     // questions content state for displaying questions and answers
     const [questions, setQuestions] = useState( questionsList );
     const [questionNum, setQuestionNum] = useState(1);
     const [questionAmount, setQuestionAmount] = useState(0);
     const [questionText, setQuestionText] = useState('');
-    let questionID = 0;
     // use effect hook for timer and setup of question
     useEffect(() => {
         setQuestionAmount(questions.length);
